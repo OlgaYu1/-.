@@ -60,11 +60,5 @@ Grafana также поддерживает интеграцию с разным
 - Использование [Recording Rules](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/edit/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BE%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20IT%2D%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-,Recording%20Rules,-Slack) для увеличения скорости запросов дашбордов с панелями и оценки [alerting rules](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/edit/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=%D0%9E%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-,Alerting%20rules,-Alertmanager);
 - Alerting rules запускают оповещения  для уведомлений о возникновении проблем с кластерами и их рабочими нагрузками, или о прочих состояниях, требующих мониторинга.
 
-
-
 ## *Примеры сценариев использования Grafana в Kubernetes*
-В качестве примеров приведем установку, удаление, ///// Grafana в Kubernetes.
-
-
-
-
+### Развертывание Grafana в Kubernetes
