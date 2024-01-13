@@ -98,7 +98,7 @@ Grafana поддерживает следующие базы данных:
 ```
 kubectl create namespace my-grafana
 ```
-В этом примере пространство имен `my-grafana`.
+*В этом примере пространство имен `my-grafana`.*
 
 2. Чтобы проверить и просмотреть вновь созданное пространство имен, выполните следующую команду:
 
@@ -106,7 +106,7 @@ kubectl create namespace my-grafana
 kubectl get namespace my-grafana
 ```
 
-Вывод команды предоставляет дополнительную информацию о вновь созданном пространстве имен.
+*Вывод команды предоставляет дополнительную информацию о вновь созданном пространстве имен.*
 
 3. Создайте [файл манифеста YAML](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/edit/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-,%D0%A4%D0%B0%D0%B9%D0%BB%20%D0%BC%D0%B0%D0%BD%D0%B8%D1%84%D0%B5%D1%81%D1%82%D0%B0%20YAML,-Editing%20Test%2Dtask) с именем `grafana.yaml`. Этот файл будет содержать необходимый код для развертывания:
 
@@ -114,7 +114,7 @@ kubectl get namespace my-grafana
 touch grafana.yaml
 ```
 
-На следующем шаге вы определите следующие три объекта в файле YAML:
+*На следующем шаге вы определите следующие три объекта в файле YAML:*
 | Объект | Описание |
 | --- | --- |
 | Постоянная заявка на объем (PVC) | Этот объект хранит данные. |
@@ -214,7 +214,7 @@ spec:
 kubectl apply -f grafana.yaml --namespace=my-grafana
 ```
 
-Эта команда создает объекты [PVC](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/blob/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BE%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20IT%2D%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-,PVC,-%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB), [Deployment](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/blob/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=Azure%20Monitor-,Deployment,-%22%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%22%2C%20%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%20Kubernetes) и [Service](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/edit/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=Rolling-,Service,-%D0%B2%20Kubernetes%20%D1%8D%D1%82%D0%BE).
+*Эта команда создает объекты [PVC](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/blob/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BE%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20IT%2D%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-,PVC,-%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB), [Deployment](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/blob/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=Azure%20Monitor-,Deployment,-%22%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%22%2C%20%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%20Kubernetes) и [Service](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/edit/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=Rolling-,Service,-%D0%B2%20Kubernetes%20%D1%8D%D1%82%D0%BE).*
 
 6. Выполните следующие шаги, чтобы проверить состояние развертывания каждого объекта:
 
