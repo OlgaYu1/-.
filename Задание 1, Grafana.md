@@ -208,3 +208,20 @@ spec:
   type: LoadBalancer
 ```
 
+5. Выполните следующую команду, чтобы отправить манифест на сервер [API Kubernetes](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/edit/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=Alertmanager-,API%20Kubernetes,-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D1%8F%D0%B5%D1%82):
+
+```
+kubectl apply -f grafana.yaml --namespace=my-grafana
+```
+
+Эта команда создает объекты [PVC](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/blob/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BE%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20IT%2D%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-,PVC,-%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB), [Deployment](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/blob/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=Azure%20Monitor-,Deployment,-%22%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%22%2C%20%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%20Kubernetes) и [Service](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/edit/main/%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E%201.md#:~:text=Rolling-,Service,-%D0%B2%20Kubernetes%20%D1%8D%D1%82%D0%BE).
+
+6. Выполните следующие шаги, чтобы проверить состояние развертывания каждого объекта:
+
+а. Для PVC выполните следующую команду:
+
+```
+kubectl get pvc --namespace=my-grafana -o wide
+```
+
+
