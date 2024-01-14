@@ -314,5 +314,56 @@ cd prometheus-*
 
 Метрики Node Exporter были доставлены в Prometheus, далее они будут отправлены в Grafana.
 
-### Настройка Prometheus для Grafana
+### Настройка Prometheus для Grafana. Просмотр показателей Grafana с помощью Prometheus
 
+**1.** Предоставление источника данных:
+
+```
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    # Access mode - proxy (server in the UI) or direct (browser in the UI).
+    url: http://localhost:9090
+    jsonData:
+      httpMethod: POST
+      manageAlerts: true
+      prometheusType: Prometheus
+      prometheusVersion: 2.44.0
+      cacheLevel: 'High'
+      disableRecordingRules: false
+      incrementalQueryOverlapWindow: 10m
+      exemplarTraceIdDestinations:
+        # Field with internal link pointing to data source in Grafana.
+        # datasourceUid value can be anything, but it should be unique across all defined data source uids.
+        - datasourceUid: my_jaeger_uid
+          name: traceID
+
+        # Field with external link.
+        - name: traceID
+          url: 'http://localhost:3000/explore?orgId=1&left=%5B%22now-1h%22,%22now%22,%22Jaeger%22,%7B%22query%22:%22$${__value.raw}%22%7D%5D'
+```
+
+**2.** Чтобы импортировать встроенную панель мониторинга, перейдите на страницу конфигурации источника данных.
+**3.** Выберите вкладку «Панели мониторинга».
+**4.** Среди отобразившихся информационных панелей для Grafana и Prometheus выберите необходимую и нажмите "импортировать", чтобы панель мониторинга импортировалась.
+**5.** После импорта откройте установленную панель/дашборд.
+
+![пример дашборда](https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/00ad6f4b-9d63-4f5e-800f-d48ff2e64576)
+*Рис. 2. Пример импортированного дашборда*
+
+**6.** Для установки дополнительных плагинов, напр., плагина для отображения круговых диаграмм - загрузите по ссылке https://grafana.com/grafana/plugins/grafana-piechart-panel и выполните следующую команду:
+
+```
+grafana-cli plugins install grafana-piechart-panel
+```
+
+**7.** Для завершения установки плагина перезапустите Grafana:
+
+```
+service grafana-server restart
+```
+
+Панель с круговой диаграммой должна отображаться правильно.
