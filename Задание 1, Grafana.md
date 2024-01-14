@@ -228,3 +228,78 @@ kubectl get deployments --namespace=my-grafana -o wide
 kubectl get svc --namespace=my-grafana -o wide
 ```
 
+### Установка и запуск Prometheus Node Exporter
+Установите node_exporter на все хосты, которые вы хотите отслеживать. Ниже покажем, как установить его локально.
+
+Prometheus Node Exporter — широко используемый инструмент, предоставляющий системные метрики. 
+
+**1.** После загрузки файла Prometheus Node Exporter извлеките его и запустите:
+
+```
+# NOTE: Replace the URL with one from the above mentioned "downloads" page.
+# <VERSION>, <OS>, and <ARCH> are placeholders.
+wget https://github.com/prometheus/node_exporter/releases/download/v<VERSION>/node_exporter-<VERSION>.<OS>-<ARCH>.tar.gz
+tar xvfz node_exporter-*.*-amd64.tar.gz
+cd node_exporter-*.*-amd64
+./node_exporter
+```
+
+Вы должны увидеть такой вывод, указывающий, что Node Exporter теперь запущен и предоставляет метрики на порту 9100:
+
+```
+INFO[0000] Starting node_exporter (version=0.16.0, branch=HEAD, revision=d42bd70f4363dced6b77d8fc311ea57b63387e4f)  source="node_exporter.go:82"
+INFO[0000] Build context (go=go1.9.6, user=root@a67a9bc13a69, date=20180515-15:53:28)  source="node_exporter.go:83"
+INFO[0000] Enabled collectors:                           source="node_exporter.go:90"
+INFO[0000]  - boottime                                   source="node_exporter.go:97"
+...
+INFO[0000] Listening on :9100                            source="node_exporter.go:111"
+```
+
+**2.** Убедитесь, что метрики экспортируются, сверив конечную точку `/metrics`:
+
+```
+curl http://localhost:9100/metrics
+```
+
+Вы должны увидеть такой вывод:
+
+```
+# HELP go_gc_duration_seconds A summary of the GC invocation durations.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 3.8996e-05
+go_gc_duration_seconds{quantile="0.25"} 4.5926e-05
+go_gc_duration_seconds{quantile="0.5"} 5.846e-05
+# etc.
+```
+
+**3.** Для просмотра системных метрик, выполните следующую команду:
+
+```
+curl http://localhost:9100/metrics | grep "node_"
+```
+
+### Установка и настройка Prometheus 
+
+**1.** После загрузки Prometheus извлеките его и перейдите в каталог:
+
+```
+tar xvfz prometheus-*.tar.gz
+cd prometheus-*
+```
+
+**2.** Найдите в каталоге файл prometheus.yml.
+
+**3.** Измените файл конфигурации Prometheus, чтобы отслеживать хосты, на которых вы установили Node Exporter, добавив следующий код:
+
+```
+ # A scrape configuration containing exactly one endpoint to scrape from node_exporter running on a host:
+ scrape_configs:
+     # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+     - job_name: 'node'
+
+     # metrics_path defaults to '/metrics'
+     # scheme defaults to 'http'.
+
+       static_configs:
+       - targets: ['localhost:9100']
+```
