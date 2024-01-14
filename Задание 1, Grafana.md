@@ -280,7 +280,7 @@ curl http://localhost:9100/metrics | grep "node_"
 
 ### Установка и настройка Prometheus 
 
-**1.** После загрузки Prometheus извлеките его и перейдите в каталог:
+**1.** После загрузки Prometheus извлеките его и перейдите в каталог, выполнив следующую команду:
 
 ```
 tar xvfz prometheus-*.tar.gz
@@ -303,3 +303,16 @@ cd prometheus-*
        static_configs:
        - targets: ['localhost:9100']
 ```
+
+**4.** Для запуска службы Prometheus выполните следующую команду:
+
+```
+ ./prometheus --config.file=./prometheus.yml
+```
+
+**5.** Убедитесь, что Prometheus запущен, перейдя к `http://localhost:9090`.
+
+Метрики Node Exporter были доставлены в Prometheus, далее они будут отправлены в Grafana.
+
+### Настройка Prometheus для Grafana
+
