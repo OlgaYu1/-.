@@ -72,7 +72,7 @@
 
 <img width="376" alt="Снимок6" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/3ceedce0-000a-4af2-951e-599b2b29d2b5">
 
-*Непонятно, "выполните" с какой целью? Список можно озаглавить как "Примеры команд Shell".*
+*Вырвано из контекста, "выполните" с какой целью? Последующий список можно озаглавить как "Примеры команд Shell", например.*
 
 <img width="349" alt="Снимок13" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/3f6332ab-e81d-4876-8e67-1185c3c69871">
 
