@@ -86,6 +86,14 @@
 
 *Пропущено существительное, должно быть "учетная запись пользователя", и соответствующее окончание глагола - "заблокирована".*
 
+<img width="304" alt="Снимок30" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/3ab289d8-de8b-4c09-b993-115edf5bbb17">
+
+*Лишний дефис.*
+
+<img width="449" alt="Снимок31" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/73599ca8-92ad-4b04-86b4-56a7de6b6be3">
+
+*В первом случае пропущена запятая, во втором - тире.*
+
 # Замечания к стилистике:
 
 <img width="429" alt="Снимок2" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/b90d066c-d0a4-4d69-94ae-17d0412b6393">
