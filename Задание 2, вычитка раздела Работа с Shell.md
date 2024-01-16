@@ -64,7 +64,7 @@
 
 <img width="274" alt="Снимок21" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/baa2f90f-b49c-48ca-977a-17615de79b0f">
 
-*Некорректный падеж, заменить на "вывод идентификаторов", либо дополнить "вывод информации об ...".*
+*Некорректный падеж, либо заменить на "вывод идентификаторов", либо дополнить "вывод информации об ...".*
 
 <img width="442" alt="Снимок22" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/c15f6b26-7cef-479a-96a4-a571d734f522">
 
