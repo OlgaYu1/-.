@@ -21,13 +21,23 @@
 
 *Сокращение sh ранее по тексту не введено, следовало бы обозначить "Shell (далее - sh)".*
 
+<img width="429" alt="Снимок4" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/26866c35-4e95-4dd0-b9eb-a6995e6c9075">
+
+*Необходимо добавить знак доллара по аналогии с решеткой.*
+
+<img width="215" alt="Снимок5" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/1c454686-b4fa-4bfd-913e-40cfc5afc035">
+
+*Это не часть списка, нумерация не требуется.*
+
+
 
 
 # Замечания к стилистике
 Употребление неуместных в данном стиле слов, словосочетаний, конструкций; недостаточная лаконичность, художественность:
 
-<img width="429" alt="Снимок2" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/e75672e2-6002-44e0-832f-f15bbbdf20c0">
+<img width="429" alt="Снимок2" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/b90d066c-d0a4-4d69-94ae-17d0412b6393">
 
+*Весь выделенный текст можно заменить на "Shell".*
 
 
 # Замечания к содержанию
