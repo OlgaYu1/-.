@@ -23,14 +23,15 @@
 
 <img width="429" alt="Снимок4" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/26866c35-4e95-4dd0-b9eb-a6995e6c9075">
 
-*Необходимо добавить знак доллара по аналогии с решеткой.*
+*Необходимо добавить знак доллара ($) по аналогии с решеткой (#).*
 
 <img width="215" alt="Снимок5" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/1c454686-b4fa-4bfd-913e-40cfc5afc035">
 
 *Это не часть списка, нумерация не требуется.*
 
+<img width="452" alt="Снимок9" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/039b3fd7-dcb0-4e57-b9cc-fbaa24fa5584">
 
-
+*Перечень элементов списка в данном случае должен быть через точку с запятой, точка - в конце, а не в середине списка.* 
 
 # Замечания к стилистике
 Употребление неуместных в данном стиле слов, словосочетаний, конструкций; недостаточная лаконичность, художественность:
@@ -39,5 +40,22 @@
 
 *Весь выделенный текст можно заменить на "Shell".*
 
+<img width="453" alt="Снимок7" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/1a0abc7c-d612-428e-a833-152bd7a6cc61">
+
+*Лишнее пояснение, не несущее смысловой нагрузки.*
+
+<img width="435" alt="Снимок8" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/ac7a04ae-ccd3-4499-acde-ceaf2878ff4a">
+
+*Автор сомневается? В технической документации следует использовать однозначные формулировки.*
+
+<img width="430" alt="Снимок10" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/3033699b-c61a-4c37-94b7-3b61fd8025cb">
+
+*Несколько просторечно, предпочтительнее заменить на "в данный момент времени".*
 
 # Замечания к содержанию
+
+<img width="376" alt="Снимок6" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/3ceedce0-000a-4af2-951e-599b2b29d2b5">
+
+*Непонятно, с какой целью? Список можно озаглавить как "Пример команд для Shell".*
+
+
