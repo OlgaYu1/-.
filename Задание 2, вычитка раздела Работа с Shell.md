@@ -73,12 +73,18 @@
 <img width="279" alt="Снимок23" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/cb383280-5f71-4df4-a100-cc23ea087ee3">
 ,
 <img width="379" alt="Снимок27" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/7a89c9c8-d9b5-4d2b-84bf-34a51cae125b">
+,
+<img width="387" alt="Снимок28" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/30473f2c-6f19-476e-8781-3dc63e78b8a3">
 
 *Пропущены запятые.*
 
 <img width="463" alt="Снимок26" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/79b73dab-0543-450d-807b-e0aa46dc8a4a">
 
 *Данный перечень ключей ниже по тексту обозначен как таблица, однако соответствующим образом не оформлен. В таблице должны быть 3 столбца - ключ, расшифровка, пояснения, а также 12 строк по количеству ключей*.
+
+<img width="438" alt="Снимок29" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/92e002d9-9d38-4005-97e0-c6723ede1242">
+
+*Пропущено существительное, должно быть "учетная запись пользователя", и соответствующее окончание глагола - "заблокирована".*
 
 # Замечания к стилистике:
 
