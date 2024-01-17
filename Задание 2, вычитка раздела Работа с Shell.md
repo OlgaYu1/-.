@@ -131,7 +131,7 @@
 
 <img width="302" alt="Снимок24" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/b54268f8-ab4e-4f58-8051-40a7bb25785e">
 
-*Пропущено "Результат выполнения команды:"
+*Пропущено "Результат выполнения команды:"*
 
 <img width="217" alt="Снимок32" src="https://github.com/OlgaYu1/Test-task-SberTech-Olga-Yuvchenko/assets/154415031/bc8c6ba2-6aab-4e40-9ccd-3442d20cbaed">
 
